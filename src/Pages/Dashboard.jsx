@@ -59,7 +59,7 @@ const DashboardPage = () => {
 
     const fetchBoards = async () => {
         try {
-            const token = localStorage.getItem('token');
+            const token = sessionStorage.getItem('token');
             const headers = { Authorization: `Bearer ${token}` };
             const res = await getAllBoards(headers);
             setBoards(res.data);
@@ -72,7 +72,7 @@ const DashboardPage = () => {
     const handleCreateBoard = async () => {
         if (boardName.trim()) {
             try {
-                const token = localStorage.getItem('token');
+                const token = sessionStorage.getItem('token');
                 const headers = { Authorization: `Bearer ${token}` };
 
                 if (editMode) {
@@ -116,7 +116,7 @@ const DashboardPage = () => {
 
     const handleDeleteBoard = async (id) => {
         try {
-            const token = localStorage.getItem('token');
+            const token = sessionStorage.getItem('token');
             const headers = { Authorization: `Bearer ${token}` };
             await deleteBoard(id, headers);
             toast.success("Board deleted successfully!");
