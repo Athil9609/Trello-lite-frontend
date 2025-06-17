@@ -326,8 +326,7 @@ export default function Board() {
                       minWidth: 400,
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        boxShadow: 6,
-                        transform: "translateY(-2px)",
+                        boxShadow: "0px 4px 25px rgba(255, 255, 255, 0.2)",
                       },
                     }}
                   >
