@@ -1,6 +1,6 @@
 import commonApi from "./commonApi";
 
-const base_url = `http://localhost:3000`;
+const base_url = `https://trello-lite-backend.onrender.com`;
 
 export const userReg = async (data) => {
   return await commonApi(`${base_url}/reg`, "POST", "", data);
