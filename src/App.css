@@ -1,0 +1,21 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #1D2125;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444c56;
+  border-radius: 4px;
+}
